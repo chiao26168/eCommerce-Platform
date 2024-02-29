@@ -10,7 +10,6 @@ import {
   createProductReview,
   getTopProducts,
 } from "../controllers/productController.js";
-import { create } from "tar";
 
 router.route("/").get(getProducts).post(protect, admin, createProduct);
 router.route("/top").get(getTopProducts);
